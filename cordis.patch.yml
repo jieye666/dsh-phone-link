@@ -1,0 +1,8 @@
+# dsh-phone-link bundle patch
+#
+# `dsh plugin --profile <name> add` reconciles `dsh.profile.bundles` against
+# installed packages; seeing `dsh.bundle.patch` it appends this package to the
+# bundle stack, and profile boot merges the single insert below.
+- insert:
+    - id: phone-link
+      name: 'dsh-phone-link'
